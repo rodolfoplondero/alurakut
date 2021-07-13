@@ -46,10 +46,12 @@ export default function Home() {
           <ul>
             { pessoasFavoritas.map((itemAtual) => {
               return (
+                <li>
                   <a href={`/users/${itemAtual}`} key={itemAtual}>
                     <img src={`https://github.com/${itemAtual}.png`} />
                     <span>{itemAtual}</span>
                   </a>
+                </li>
                 )
               })}  
           </ul>
